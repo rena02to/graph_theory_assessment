@@ -1,2 +1,3 @@
 # theory_of_graphs
- Project made to obtain a grade for av2 in the subject of graph theory at UFAL in the computer science course
+ Projeto realizado para obtenção da nota AB2 na disciplina de teoria dos grafos no curso de Ciencia da Computacao (Ufal).
+ No arquivo .dat há o grafo, sendo 
