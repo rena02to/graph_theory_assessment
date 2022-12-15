@@ -33,10 +33,10 @@ void BellmanFord(int graph[][MAX], int V, int E, int u)
         int weight = graph[i][2];
         if (dis[x] != INF &&
                    dis[x] + weight < dis[y])
-            cout << "Graph contains negative weight cycle" << endl;
+            cout << "O gráfico contém um ciclo negativo" << endl;
     }
  
-    cout << "Vertex Distance from Source" << endl;
+    cout << "Distância entre o vértice e a fonte" << endl;
     for (int i = 0; i < V; i++)
         cout << i << "\t\t" << dis[i] << endl;
 }
@@ -84,7 +84,6 @@ int assistant(string linha)
 }
 
 
-// Driver program to test above functions
 int main()
 {
     
