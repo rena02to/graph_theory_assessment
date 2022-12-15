@@ -22,4 +22,5 @@ Na saida temos:
 OBS: 
  -> O tamanho maximo de arestas foi definido como 50 (em grafo[50][50]) para evitar problemas de compilacao que estavam ocorrendo em minha maquina.
  -> Os valores das arestas devem ser inteiros e 
- -> Se o peso da aresta for 1, nao deixar em branco, colocar como no exemplo.
+ -> Se o peso da aresta for 1, nao deixar em branco, como no exemplo.
+ -> Caso o peso seja negativo, coloque o "-" apos o espaco e antes do numero (sem espaco apos o "-"), como no exemplo.
