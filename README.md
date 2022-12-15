@@ -1,4 +1,7 @@
 # theory_of_graphs
+
+Aluno: Renato dos Santos;
+
  Projeto realizado para obtenção da nota AB2 na disciplina de teoria dos grafos no curso de Ciencia da Computacao (Ufal).
  
  
