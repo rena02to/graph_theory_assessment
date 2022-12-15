@@ -10,9 +10,10 @@
 
 
 Na saida temos:
- -> Seja o vertice i o vertice escolhido;
- Rota de i para todos os outros vertices;
- Custo de i para todos os outros vertices;
+ -> Seja o vertice u o vertice escolhido;
+ Rota de u para todos os outros vertices;
+ Custo de u para todos os outros vertices;
+ Custo de u(inicial) para v(final);
 
 
 OBS: o tamanho maximo de arestas foi definido como 50 (em grafo[50][50]) para evitar problemas de compilacao que estavam ocorrendo em minha maquina.
