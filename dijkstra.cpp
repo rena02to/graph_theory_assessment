@@ -3,7 +3,7 @@
 #include <fstream>
 #include <math.h>
 #define INF 9999 //infinito = 9999
-#define MAX 2000
+#define MAX 50
 
 using namespace std;
 
@@ -27,7 +27,7 @@ void imprime_vector(int vetor[])
 
 
 //funcao de dijkstra
-void dijkstra(int ordem, int s, int grafo[][50], int custo[50], int rota[50])
+void dijkstra(int ordem, int s, int grafo[][MAX], int custo[MAX], int rota[MAX])
 {
     int r = -1;
 
@@ -94,7 +94,7 @@ int inteiro(string linha, int j, int k)
 //funcao auxiliar para saber quantos valores tem na linha
 int assistant(string linha)
 {
-    int contador = 0, i = 0, k = 0, j = 0;
+    int contador = 0, i = 0, k = 0, j = 0, mult = 1;
    
 
     for(i = 0, k = -1, j = 1; linha[i]; i++){
@@ -108,14 +108,20 @@ int assistant(string linha)
             j++;
         }
     }
+    
+    if(linha[k + 1] == '-'){
+        k++;
+        mult = -1;
+    }
     peso = inteiro(linha, i, k);
+    peso = peso * mult;
 }
 
 
 int main()
 {
     string linha;
-    int cont = 0, v, u;
+    int cont = 0, u;
     
 
     ifstream file;
@@ -131,22 +137,17 @@ int main()
 
     //calcula o u a partie do .dat sendo u o vertice de inicio
     getline(file, linha);
-    for(int i = 0, cont = 0; linha[i]; i++)
+    cont = 0;
+    for(int i = 0; linha[i]; i++)
         cont++;
     u = inteiro(linha, cont, -1);
     
-    //calcula o v a partie do .dat sendo v o vertice final ao qual se deseja saber o caminho minimo
-    getline(file, linha);
-    for(int i = 0, cont = 0; linha[i]; i++)
-        cont++;
-    v = inteiro(linha, cont, -1);
 
-
-    int grafo[50][50];
-    int custo[50], rota[50];
+    int grafo[MAX][MAX];
+    int custo[MAX], rota[MAX];
 
     //preenche o grafo todo com 0
-    for(int i = 0; i < 50; i++){
+    for(int i = 0; i < MAX; i++){
         for(int j = 0; j < n; j++)
             grafo[i][j] = 0;
     }
@@ -159,15 +160,13 @@ int main()
         grafo[edge - 1][edge2 - 1] = peso;
         grafo[edge2 - 1][edge - 1] = peso;
     }
-
+    
     //chama a funcao dijkstrta e printa o vetor desejado
     dijkstra(n, u-1, grafo, custo, rota);
     cout << "ROTA: ";
     imprime_vector(rota);
     cout << endl << "CUSTO: ";
     imprime_vector(custo);
-    cout << endl << "CAMINHO MINIMO DE u(" << u << ") PARA v(" << v << "): ";
-    cout << custo[v - 1];
 
     return 0;
 }
