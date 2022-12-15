@@ -1,26 +1,29 @@
-# theory_of_graphs
+# Projeto de Teoria dos Grafos
 
-Aluno: Renato dos Santos;
+![Badge em Desenvolvimento](https://img.shields.io/badge/STATUS-CONCLUÍDO-blue)
 
- Projeto realizado para obtenção da nota AB2 na disciplina de teoria dos grafos no curso de Ciencia da Computacao (Ufal).
- 
- 
- No arquivo .dat há o grafo, sendo:
-  A primeira linha corresponde ao numero de arestas;
-  A segunda linha corresponde ao vertice de inicio (valor real) (vertice u);
-  A terceira linha corresponde ao vertice de destino (valor real) (vertice v) ao qual se deseja saber o caminho minimo;
-  Nas linhas abaixo, na primeira coluna o verice A, na segunda o vertice B (o que significa que A adjacente a B, ou seja, ha uma aresta entre tais vertices) e na teceira o peso.
+Trabalho requerido para a obtenção de nota referente à AB2 da disciplina de Teoria dos Grafos, no curso de Ciência da Computação promovido pela Universidade Federal de Alagoas (UFAL).
 
+Equipe: 
+- Lara Vitória Silva Santos Barros
+- Renato dos  Santos
 
-Na saida temos:
- -> Seja o vertice u o vertice escolhido;
- Rota de u para todos os outros vertices;
- Custo de u para todos os outros vertices;
- Custo de u(inicial) para v(final);
+### 💻 Descrição
 
+O projeto tem como objetivo aplicar a implementação de 4 algoritmos nas linguagens C ou C++ envolvendo grafos. Os referidos foram os seguintes:
 
-OBS: 
- -> O tamanho maximo de arestas foi definido como 50 (em grafo[50][50]) para evitar problemas de compilacao que estavam ocorrendo em minha maquina.
- -> Os valores das arestas devem ser inteiros e 
- -> Se o peso da aresta for 1, nao deixar em branco, como no exemplo.
- -> Caso o peso seja negativo, coloque o "-" apos o espaco e antes do numero (sem espaco apos o "-"), como no exemplo.
+#### Bellman-Ford
+O algoritmo calculará o vetor de pais de uma CPT ou anunciará que o grafo tem um ciclo negativo.
+#### Prim
+É um algoritmo guloso empregado para encontrar uma árvore geradora mínima (minimal spanning tree) num grafo conectado, valorado e não direcionado.
+#### Djikstra
+ É um dos algoritmos que calcula o caminho de custo mínimo entre vértices de um grafo. Escolhido um vértice como raiz da busca, este algoritmo calcula o custo mínimo deste vértice para todos os demais vértices do grafo.
+#### Floyd
+É um algoritmo que resolve o problema de determinar o caminho mais curto entre todos os pares de nós em um grafo orientado e ponderado.
+
+### 🛠 Tecnologias Utilizadas
+
+As seguintes ferramentas foram usadas na construção do projeto:
+
+- [VSCode](https://code.visualstudio.com/)
+- [MinGW](https://osdn.net/projects/mingw/)
