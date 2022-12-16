@@ -23,7 +23,7 @@ O algoritmo de Kruskal é um algoritmo em teoria dos grafos que busca uma árvor
 
 ### Instruções
 
-É importante ressaltar que o arquivo .dat contém os dados de entrada e deve ser deixado na mesma pasta que os algoritmos para que funcione corretamente.
+É importante ressaltar que o arquivo grafo.dat contém os dados de entrada e deve ser deixado na mesma pasta que os algoritmos para que funcione corretamente.
 
 Composição do arquivo:
 
