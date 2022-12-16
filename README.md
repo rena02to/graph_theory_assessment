@@ -21,9 +21,24 @@ O algoritmo calculará o vetor de pais de uma CPT ou anunciará que o grafo tem 
 #### Kruskal
 O algoritmo de Kruskal é um algoritmo em teoria dos grafos que busca uma árvore geradora mínima para um grafo conexo com pesos. Isto significa que ele encontra um subconjunto das arestas que forma uma árvore que inclui todos os vértices, onde o peso total, dado pela soma dos pesos das arestas da árvore, é minimizado.
 
+### Instruções
+
+É importante ressaltar que o arquivo .dat contém os dados de entrada e deve ser deixado na mesma pasta que os algoritmos para que fude funcione corretamente.
+
+Composição do arquivo:
+
+1° linha: Aresta inicial 
+2° linha: Aresta final
+3° linha: Peso
+A partir da 4° linha: grafo 
+
+Não se deve ocultar o peso mesmo que seja 1, deve sempre ser colocado nas informações.
+
 ### 🛠 Tecnologias Utilizadas
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
 - [VSCode](https://code.visualstudio.com/)
 - [MinGW](https://osdn.net/projects/mingw/)
+
+
