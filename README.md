@@ -19,7 +19,7 @@ O algoritmo calculará o vetor de pais de uma CPT ou anunciará que o grafo tem 
 #### Djikstra
  É um dos algoritmos que calcula o caminho de custo mínimo entre vértices de um grafo. Escolhido um vértice como raiz da busca, este algoritmo calcula o custo mínimo deste vértice para todos os demais vértices do grafo.
 #### Floyd
-É um algoritmo que resolve o problema de determinar o caminho mais curto entre todos os pares de nós em um grafo orientado e ponderado.
+O algoritmo de Kruskal é um algoritmo em teoria dos grafos que busca uma árvore geradora mínima para um grafo conexo com pesos. Isto significa que ele encontra um subconjunto das arestas que forma uma árvore que inclui todos os vértices, onde o peso total, dado pela soma dos pesos das arestas da árvore, é minimizado.
 
 ### 🛠 Tecnologias Utilizadas
 
