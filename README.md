@@ -6,7 +6,7 @@ Trabalho requerido para a obtenção de nota referente à AB2 da disciplina de T
 
 Equipe: 
 - Lara Vitória Silva Santos Barros
-- Renato dos  Santos
+- Renato dos  Santos Alves
 
 ### 💻 Descrição
 
