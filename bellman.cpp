@@ -63,7 +63,7 @@ void BellmanFord(struct Graph* graph, int u) {
         int v = graph->edge[i].v;
         int w = graph->edge[i].w;
         if (dist[u] != INT_MAX && dist[u] + w < dist[v]) {
-            printf("Graph contains negative w cycle");
+            printf("O gráfico contém um ciclo negativo!");
             return;
         }
     }
