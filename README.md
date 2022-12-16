@@ -23,14 +23,14 @@ O algoritmo de Kruskal é um algoritmo em teoria dos grafos que busca uma árvor
 
 ### Instruções
 
-É importante ressaltar que o arquivo .dat contém os dados de entrada e deve ser deixado na mesma pasta que os algoritmos para que fude funcione corretamente.
+É importante ressaltar que o arquivo .dat contém os dados de entrada e deve ser deixado na mesma pasta que os algoritmos para que funcione corretamente.
 
 Composição do arquivo:
 
-1° linha: Aresta inicial 
-2° linha: Aresta final
-3° linha: Peso
-A partir da 4° linha: grafo 
+- 1° linha: Aresta inicial 
+- 2° linha: Aresta final
+- 3° linha: Peso
+- A partir da 4° linha: grafo 
 
 Não se deve ocultar o peso mesmo que seja 1, deve sempre ser colocado nas informações.
 
