@@ -27,10 +27,10 @@ O algoritmo de Kruskal é um algoritmo em teoria dos grafos que busca uma árvor
 
 Composição do arquivo:
 
-- 1° linha: Aresta inicial 
-- 2° linha: Aresta final
-- 3° linha: Peso
-- A partir da 4° linha: grafo 
+- 1° linha: numero de vertices
+- 2° linha: numero de arestas
+- 3° linha: vertice inicial
+- A partir da 4° linha: grafo em que (coluna 1: verice incial da aresta; coluna 2: vertice final da aresta; coluna 3: peso) 
 
 Não se deve ocultar o peso mesmo que seja 1, deve sempre ser colocado nas informações.
 
